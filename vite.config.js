@@ -6,7 +6,7 @@ import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/portofolio2',
+  base: '/portofolio2/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
