@@ -27,6 +27,11 @@ jobs:
           check-latest: true
           cache: 'pnpm'
 
+      - name: PNPM install and Build
+        run: |
+          pnpm i
+          pnpm build
+
       - name: Deploy Site
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
